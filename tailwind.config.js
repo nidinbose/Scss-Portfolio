@@ -3,7 +3,12 @@ export default {
   content: [    "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'mono': ['"jetBrains Mono"','monospace'],
+  
+      },
+    },
   },
   plugins: [],
 }

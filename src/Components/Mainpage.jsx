@@ -5,6 +5,8 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import Pic from './UI/Pic';
 import About from './About';
+import Projects from './Projects';
+// import Parallalx from './Parallalx';
 // import Services from './Services';
 const Mainpage = () => {
   return (
@@ -18,7 +20,7 @@ const Mainpage = () => {
 </section>
 <About/>
 <section>
-  {/* <Services/> */}
+  {/* <Parallalx/> */}
 </section>
 
 </>
