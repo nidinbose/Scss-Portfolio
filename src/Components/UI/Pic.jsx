@@ -6,15 +6,15 @@ const Pic = () => {
     <div className="relative flex justify-center items-center mb-20">
       <motion.div className="photo relative z-15 mb-12">
         <img 
-          src="./images/b.png" 
+          src="./b.png" 
           alt="Responsive Image" 
-          className="object-contain mix-blend-screen w-auto h-64 sm:h-80 md:h-96 xl:h-112 mb-12 xl:ml-[150px] xl:mr-[30px] "
+          className="object-contain mix-blend-screen w-auto h-64 sm:h-80 md:h-96 xl:h-112 mb-12 xl:ml-[20px] xl:mr-[30px] "
 
         />
       </motion.div>
 
       <motion.svg 
-        className="absolute w-[200px] sm:w-[250px] md:w-[300px] xl:w-[406px] h-[200px] sm:h-[250px] md:h-[300px] xl:h-[406px] right-0"
+        className="absolute w-[200px] sm:w-[250px] md:w-[300px] xl:w-[406px] h-[200px] sm:h-[250px] md:h-[300px] xl:h-[406px] "
         fill="transparent" 
         viewBox="0 0 506 506" 
         xmlns="http://www.w3.org/2000/svg"
