@@ -6,22 +6,29 @@ import Hero from './Hero';
 import Pic from './UI/Pic';
 import About from './About';
 import Projects from './Projects';
-// import Parallalx from './Parallalx';
+import Parallalx from './Parallalx';
 // import Services from './Services';
 const Mainpage = () => {
   return (
 <>
 <section id='Homepage'><Link to={``}>
- <Navbar/>
+ {/* <Navbar/> */}
  <Hero/>
  </Link></section>
+
+ <section>
+  <Parallalx type="about"/>
+</section>
+
+
 <section>
+  <About/>
+</section>
  
-</section>
-<About/>
-<section>
-  {/* <Parallalx/> */}
-</section>
+
+
+
+
 
 </>
   )

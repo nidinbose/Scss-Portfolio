@@ -39,7 +39,7 @@ const sliderVariants = {
 
 const About = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4 md:p-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4 md:p-8 mt-20">
       
       {/* Picture Section */}
       <div className="flex justify-center items-center xl:mt-20">
