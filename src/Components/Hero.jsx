@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Scss/Hero.scss';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { GrGithub } from "react-icons/gr";
 
 // Motion Variants
 const textVariants = {
@@ -79,63 +81,99 @@ const TypingEffect = ({ words, typingSpeed = 150, deletingSpeed = 100 }) => {
     <span>
       {currentWord.substring(0, subIndex)}
       <span className="blinking-cursor">|</span>
+     
     </span>
+
+    
   );
+ 
 };
 
 const Hero = () => {
-  const words = ["Full Stack Developer", "Content Creator", "Influencer"];
+  const words = ["Full Stack Web Developer.", "UI/UX Designer", "Graphic Designer"];
+  const typingSpeed = 300;
+  const deletingSpeed = 150;
 
   return (
-    <div className="hero">
-      <div className="wrapper">
-        <motion.div
-          className="textContainer"
-          variants={textVariants}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.h2
-            className="text-5xl font-mono font-medium text-[#00ff99]"
-            variants={textVariants}
-            id="typewriter"
-          >
-            Hai I'M
-          </motion.h2>
-          <motion.h1
-            variants={textVariants}
-            className="hover:text-[#00ff99] font-mono"
-            id="typewriter"
-          >
-            Nidin Bose
-          </motion.h1>
-          {/* Add the TypingEffect here */}
-          <motion.h2 variants={textVariants}>
-            <TypingEffect words={words} />
-          </motion.h2>
-          <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>add</motion.button>
-            <motion.button variants={textVariants}>add</motion.button>
-          </motion.div>
-          <motion.img
-            src="./scroll.png"
-            alt=""
-            variants={textVariants}
-            animate="scrollButton"
-          />
-        </motion.div>
-      </div>
-      <motion.div
+    <div className="hero grid grid-cols-1 xl:grid-cols-2 md:grid-cols-1 lg items-center lg:grid-cols-2 sm:px-6 h-auto xl:pt-20">
+<div className='w-full mx-auto grid items-center justify-center gap-10 text-center lg:-text-start xl:text-start'>
+  <motion.h1 className='text-2xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl w-full font-mono text-[#00ff99]'
+    variants={textVariants}
+    id=''
+    initial="initial"
+    animate="animate"
+  >
+    Hello I&apos;m
+  </motion.h1>
+  <motion.h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-9xl w-full font-semibold font-mono hover:text-red-500'
+      variants={textVariants}
+      id=''
+      initial="initial"
+      animate="animate">
+  Nidinbose...
+</motion.h2>
+  <motion.div className='text-2xl xl:text-3xl font-semibold font-mono'
+      variants={textVariants}
+      id=''
+      initial="initial"
+      animate="animate">
+    <TypingEffect className="xl:text-8xl" words={words} typingSpeed={typingSpeed} deletingSpeed={deletingSpeed} />
+    </motion.div>
+
+
+<div className='text-md xl:text-lg hover:text-[#00ff99]'>
+<motion.p className='  text-[#00ff99] w-full max-w-xl mx-auto font-mono '
+    variants={textVariants}
+    initial="initial"
+    animate="animate"
+  >
+    I excel at crafting elegant digital experiences <br /> and I am proficient in various programming languages and technologies.
+  </motion.p>
+
+</div>
+  <div className='flex flex-col sm:flex-row gap-4 items-center justify-center xl:mr-[13vw] '>
+
+    <button className='uppercase mt-4 flex items-center gap-2 bg-transparent border-[#00ff99] font-mono border-2 text-white font-bold py-2 px-4 rounded-full ease-out duration-300 font-mono mb-4'>
+      DOWNLOAD CV
+    </button>
+
+    <div className='flex gap-6'>
+      <Link className='hover:bg-[#00ff99]'><button className='flex items-center justify-center w-9 h-9 border border-[#00ff99] rounded-full text-[#00ff99] text-base hover:transition-all duration-500'>
+        <GrGithub />
+      </button></Link>
+      <Link className='hover:bg-[#00ff99]'><button className='flex items-center justify-center w-9 h-9 border border-[#00ff99] rounded-full text-[#00ff99] text-base hover:transition-all duration-500'>
+        <GrGithub />
+      </button></Link>
+
+      <Link className='hover:bg-[#00ff99]'><button className='flex items-center justify-center w-9 h-9 border border-[#00ff99] rounded-full text-[#00ff99] text-base hover:transition-all duration-500'>
+        <GrGithub />
+      </button></Link>
+
+      <Link className='hover:bg-[#00ff99]'><button className='flex items-center justify-center w-9 h-9 border border-[#00ff99] rounded-full text-[#00ff99] text-base hover:transition-all duration-500'>
+        <GrGithub />
+      </button></Link>
+    </div>
+  </div>
+</div>
+
+
+
+            <div className='w-full mx-auto grid items-center justify-center gap-8 xl:mb-14'>
+
+<img src="/b.png" alt="" className='z-10 h-auto w-auto' />
+
+
+</div>
+
+        
+           <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
-        Write content creator influencer
-      </motion.div>
-      <div className="imageContainer">
-        <img src="/b.png" alt="" className="" />
-      </div>
+        Content Creator | Influencer
+      </motion.div> 
     </div>
   );
 };

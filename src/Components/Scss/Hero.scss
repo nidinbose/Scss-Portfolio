@@ -1,36 +1,37 @@
-// Import any other necessary SCSS files
+// Import other necessary SCSS files
 // @import './Mainpage.scss';
 
-// Define your mixins for different screen sizes
+// Define mixins for different screen sizes
 @mixin mobile {
     @media (max-width: 738px) {
-        @content; // Allows for additional styles to be added when the mixin is included
+        @content;
     }
 }
 
 @mixin tablet {
     @media (min-width: 739px) and (max-width: 1024px) {
-        @content; // Allows for additional styles to be added when the mixin is included
+        @content;
     }
 }
 
 @mixin desktop {
     @media (min-width: 1025px) {
-        @content; // Allows for additional styles to be added when the mixin is included
+        @content;
     }
 }
 
 // Main hero section styles
 .hero {
-    height: calc(100vh - 100px);
+    height: calc(100vh);
     overflow: hidden;
-    background: linear-gradient(180deg, #0c0c1d, #111132); // Background gradient
+    background: linear-gradient(180deg, #0c0c1d, #111132);
     position: relative;
 
     .wrapper {
         max-width: 1366px;
         height: 100%;
         margin: auto;
+        padding: 0 20px; // Adds some padding for smaller screens
     }
 
     .textContainer {
@@ -47,43 +48,36 @@
             gap: 20px;
             align-items: center;
             text-align: center;
-            font-size: 36px; 
         }
 
         img {
             width: 50px;
         }
-        h2 {
-            font-size: 10vw;
-            font-weight: 500;
-        }
-        h1 {
-            font-size: 10vw;
-            font-weight: 600;
-        }
 
+        // h2, h1 {
+        //     font-weight: 500;
+        //     margin: 0;
+        // }
+
+        // Dynamic font scaling for heading sizes
+        // h2 {
+        //     font-size: clamp(24px, 8vw, 48px); // Scales smoothly between mobile and desktop
+        // }
+
+        // h1 {
+        //     font-size: clamp(36px, 10vw, 70px); // Scales smoothly between mobile and desktop
+        // }
+
+        // Desktop-specific styles for textContainer
         @include desktop {
-            // height: 50%;
-            // width: 100%;
-            // gap: 20px;
-            // align-items: center;
-            // text-align: center;
-            font-size: 70px; 
-        }
-
-        img {
-            width: 50px;
-        }
-        h2 {
-            font-size: 4vw;
-            font-weight: 500;
-        }
-        h1 {
-            font-size: 6vw;
-            font-weight: 600;
+            // h2 {
+            //     font-size: 4vw;
+            // }
+            // h1 {
+            //     font-size: 6vw;
+            // }
         }
     }
-
 
     .imageContainer {
         height: 100%;
@@ -95,7 +89,6 @@
         @include mobile {
             height: 50%;
             width: 100%;
-            top: unset; 
             bottom: 0;
 
             img {
@@ -107,17 +100,17 @@
 
         // Tablet styles for imageContainer
         @include tablet {
-            height: 60%; // Example value, adjust as needed
+            height: 60%; // Medium size for tablet
             img {
-                object-fit: cover; // Ensures the image covers the area
+                object-fit: cover;
             }
         }
 
         // Desktop styles for imageContainer
         @include desktop {
-            height: 100%; // Full height for desktop
+            height: 100%;
             img {
-                object-fit: cover; // Ensures the image covers the area
+                object-fit: cover;
             }
         }
     }
@@ -133,15 +126,15 @@
 
         // Responsive text size adjustments
         @include mobile {
-            font-size: 30vh; // Smaller size for mobile
+            // font-size: 30vh; // Smaller size for mobile
         }
 
         @include tablet {
-            font-size: 40vh; // Medium size for tablet
+            // font-size: 40vh; // Medium size for tablet
         }
 
         @include desktop {
-            font-size: 50vh; // Default size for desktop
+            // font-size: 50vh; // Default size for desktop
         }
-    }  
+    }
 }
