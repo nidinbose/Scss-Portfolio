@@ -122,7 +122,7 @@ const Hero = () => {
 
 
 <div className='text-md xl:text-lg hover:text-[#00ff99]'>
-<motion.p className='  text-[#00ff99] w-full max-w-xl mx-auto font-mono '
+<motion.p className='  text-white/40 w-full max-w-xl mx-auto font-mono hover:text-[#00ff99] '
     variants={textVariants}
     initial="initial"
     animate="animate"
@@ -131,7 +131,10 @@ const Hero = () => {
   </motion.p>
 
 </div>
-  <div className='flex flex-col sm:flex-row gap-4 items-center justify-center xl:mr-[13vw] '>
+  <motion.div className='flex flex-col sm:flex-row gap-4 items-center justify-center xl:mr-[13vw] '
+     variants={textVariants}
+     initial="initial"
+     animate="animate">
 
     <button className='uppercase mt-4 flex items-center gap-2 bg-transparent border-[#00ff99] font-mono border-2 text-white font-bold py-2 px-4 rounded-full ease-out duration-300 font-mono mb-4'>
       DOWNLOAD CV
@@ -153,7 +156,7 @@ const Hero = () => {
         <GrGithub />
       </button></Link>
     </div>
-  </div>
+  </motion.div>
 </div>
 
 

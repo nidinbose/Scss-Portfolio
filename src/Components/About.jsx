@@ -42,14 +42,12 @@ const About = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4 md:p-8 mt-20">
       
       {/* Picture Section */}
-      <div className="flex justify-center items-center xl:mt-20">
-        <Pic />
-      </div>
+     
 
       {/* Info Section */}
        <div className='xl:mt-20 overflow-x-hidden ' >
         <motion.h1 className='text-lg xl:text-3xl font-bold font-mono ' variants={textVariants} animate="animate" initial="initial">Full Stack Developer and UI/UX Designer</motion.h1>
-       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:mt-[10vh]">
+       <div className="grid grid-cols-1 md:grid-cols-2  xl:mt-[10vh]">
         
         {/* First Row */}
         <div className="fd space-y-8">
@@ -94,6 +92,9 @@ const About = () => {
 
       </div>
        </div>
+       <div className="flex justify-center items-center xl:mt-20">
+        <Pic />
+      </div>
     
     </div>
   );
