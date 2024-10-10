@@ -40,7 +40,10 @@ const sliderVariants = {
       repeatType: 'mirror',
     },
   },
+
 };
+
+
 
 // Typing Effect Component
 const TypingEffect = ({ words, typingSpeed = 150, deletingSpeed = 100 }) => {
@@ -96,7 +99,7 @@ const Hero = () => {
 
   return (
     <div className="hero grid grid-cols-1 xl:grid-cols-2 md:grid-cols-1 lg items-center lg:grid-cols-2 sm:px-6 h-auto xl:pt-20">
-<div className='w-full mx-auto grid items-center justify-center gap-10 text-center lg:-text-start xl:text-start'>
+<div className='w-full mx-auto grid items-center justify-center gap-7 text-center lg:-text-start xl:text-start'>
   <motion.h1 className='text-2xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl w-full font-mono text-[#00ff99]'
     variants={textVariants}
     id=''
@@ -105,7 +108,7 @@ const Hero = () => {
   >
     Hello I&apos;m
   </motion.h1>
-  <motion.h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-9xl w-full font-semibold font-mono hover:text-red-500'
+  <motion.h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-9xl w-full font-semibold font-mono hover:text-[#00ff99]'
       variants={textVariants}
       id=''
       initial="initial"
@@ -131,7 +134,7 @@ const Hero = () => {
   </motion.p>
 
 </div>
-  <motion.div className='flex flex-col sm:flex-row gap-4 items-center justify-center xl:mr-[13vw] '
+  <motion.div className='flex flex-col sm:flex-row gap-4 items-center justify-start'
      variants={textVariants}
      initial="initial"
      animate="animate">
@@ -156,14 +159,20 @@ const Hero = () => {
         <GrGithub />
       </button></Link>
     </div>
+  
   </motion.div>
+<div className='flex items-center justify-center'> 
+<motion.img src="/scroll.png" alt="" variants={textVariants} animate="scrollButton"/>
+</div>
+  
 </div>
 
 
 
-            <div className='w-full mx-auto grid items-center justify-center gap-8 xl:mb-14'>
+            <div className='w-full mx-auto grid items-center justify-center gap-8 xl:mb-14  '>
 
 <img src="/b.png" alt="" className='z-10 h-auto w-auto' />
+
 
 
 </div>

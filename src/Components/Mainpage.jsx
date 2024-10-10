@@ -8,6 +8,7 @@ import About from './About';
 import Projects from './Projects';
 import Parallalx from './Parallalx';
 import Services from './Services';
+import Parallax2 from './Parallax2';
 // import Services from './Services';
 const Mainpage = () => {
   return (
@@ -24,6 +25,10 @@ const Mainpage = () => {
 
 <section>
   <Services/>
+</section>
+
+<section>
+<Parallax2/>
 </section>
  
 
