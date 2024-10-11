@@ -31,7 +31,13 @@ const Mainpage = () => {
 <Parallax2/>
 </section>
  
+<section>
+<Projects/>
+</section>
 
+<section>
+<Parallax2/>
+</section>
 
 
 
