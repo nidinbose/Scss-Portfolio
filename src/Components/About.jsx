@@ -2,100 +2,86 @@ import React from 'react';
 import Pic from './UI/Pic';
 import { IoIosArrowForward } from "react-icons/io";
 import { motion } from 'framer-motion';
-const textVariants={
-  initial:{
-      x:500,
-      opacity:0,
-  },
-  animate:{
-      x:0,
-      opacity:1,
-      transition:{
-          duration:6,
-          staggerChildren:0.1,
-      }
-  },
-  scrollButton:{
-      opacity:0,
-      y:10,
-      transition:{
-          duration:2,repeat:Infinity
-      }
-  }
-};
-const sliderVariants = {
+
+const textVariants = {
   initial: {
-    x: 0,
+    x: 500,
+    opacity: 0,
   },
   animate: {
-    x: "-220%",
+    x: 0,
+    opacity: 1,
     transition: {
-      duration: 20,
-      repeat: Infinity,
-      repeatType: "mirror",
+      duration: 1.5,
+      staggerChildren: 0.1,
     },
   },
 };
 
 const About = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4 md:p-8 mt-20">
+    <div className="min-h-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-6 px-6 py-12 bg-transparant overflow-x-auto">
       
-      {/* Picture Section */}
-     
-
-      {/* Info Section */}
-       <div className='xl:mt-20 overflow-x-hidden ' >
-        <motion.h1 className='text-lg xl:text-3xl font-bold font-mono ' variants={textVariants} animate="animate" initial="initial">Full Stack Developer and UI/UX Designer</motion.h1>
-       <div className="grid grid-cols-1 md:grid-cols-2  xl:mt-[10vh]">
-        
-        {/* First Row */}
-        <div className="fd space-y-8">
-          <h1 className="flex items-center gap-4 text-lg md:text-xl font-semibold font-mono">
-            <span><IoIosArrowForward className="text-[#00ff99]" /></span>
-            Name: <span className='font-medium text-lg'>Nidinbose</span>
-          </h1>
-          <h1 className="flex items-center gap-4 text-lg md:text-xl font-semibold font-mono">
-            <span><IoIosArrowForward className="text-[#00ff99]" /></span>
-            Name: <span>Nidinbose</span>
-          </h1>
-          <h1 className="flex items-center gap-4 text-lg md:text-xl font-semibold font-mono">
-            <span><IoIosArrowForward className="text-[#00ff99]" /></span>
-            Name: <span>Nidinbose</span>
-          </h1>
-          <h1 className="flex items-center gap-4 text-lg md:text-xl font-semibold font-mono">
-            <span><IoIosArrowForward className="text-[#00ff99]" /></span>
-            Name: <span>Nidinbose</span>
-          </h1>
-        </div>
-
-        {/* Second Row */}
-        <div className="sd space-y-8">
-          <h1 className="flex items-center gap-4 text-lg md:text-xl font-semibold font-mono">
-            <span><IoIosArrowForward className="text-[#00ff99]" /></span>
-            Name: <span>Nidinbose</span>
-          </h1>
-          <h1 className="flex items-center gap-4 text-lg md:text-xl font-semibold font-mono">
-            <span><IoIosArrowForward className="text-[#00ff99]" /></span>
-            Name: <span>Nidinbose</span>
-          </h1>
-          <h1 className="flex items-center gap-4 text-lg md:text-xl font-semibold font-mono">
-            <span><IoIosArrowForward className="text-[#00ff99]" /></span>
-            Name: <span>Nidinbose</span>
-          </h1>
-          <h1 className="flex items-center gap-4 text-lg md:text-xl font-semibold font-mono">
-            <span><IoIosArrowForward className="text-[#00ff99]" /></span>
-            Name: <span>Nidinbose</span>
-          </h1>
-          
-        </div>
-
+      {/* Left Section (Info) */}
+      <div className="flex flex-col justify-right items-end p-10 bg-transparant rounded-lg overflow-x-auto">
+        {/* <h1 className="text-2xl font-bold mb-6 text-gray-800">About Me</h1> */}
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={textVariants}
+          className="space-y-4"
+        >
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
+            <IoIosArrowForward className="text-[#00ff99]" />
+            <span>Name: Nidinbose</span>
+          </div>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
+            <IoIosArrowForward className="text-[#00ff99]" />
+            <span>Role: Frontend Developer</span>
+          </div>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
+            <IoIosArrowForward className="text-[#00ff99]" />
+            <span>Experience: 3+ Years</span>
+          </div>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
+            <IoIosArrowForward className="text-[#00ff99]" />
+            <span>Location: Remote</span>
+          </div>
+        </motion.div>
       </div>
-       </div>
-       <div className="flex justify-center items-center xl:mt-20">
+
+      {/* Center Section (Profile Picture) */}
+      <div className="flex justify-center items-center p-6 bg-transparan">
         <Pic />
       </div>
-    
+
+      {/* Right Section (Additional Info) */}
+      <div className="flex flex-col justify-center items-start p-6 bg-transparant overflow-x-auto">
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={textVariants}
+          className="space-y-4"
+        >
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
+            <IoIosArrowForward className="text-[#00ff99]" />
+            <span>Skills: React, Tailwind CSS, Framer Motion</span>
+          </div>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
+            <IoIosArrowForward className="text-[#00ff99]" />
+            <span>Projects: 20+ Completed</span>
+          </div>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
+            <IoIosArrowForward className="text-[#00ff99]" />
+            <span>Interests: UI/UX Design</span>
+          </div>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
+            <IoIosArrowForward className="text-[#00ff99]" />
+            <span>Email: nidinbose@example.com</span>
+          </div>
+        </motion.div>
+      </div>
+      
     </div>
   );
 };
