@@ -20,11 +20,10 @@ const textVariants = {
 
 const About = () => {
   return (
-    <div className="min-h-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-6 px-6 py-12 bg-transparant overflow-x-auto">
+    <div className="min-h-full grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 py-12 bg-transparent">
       
       {/* Left Section (Info) */}
-      <div className="flex flex-col justify-right items-end p-10 bg-transparant rounded-lg overflow-x-auto">
-        {/* <h1 className="text-2xl font-bold mb-6 text-gray-800">About Me</h1> */}
+      <div className="flex flex-col justify-right items-end p-6 bg-transparent rounded-lg">
         <motion.div
           initial="initial"
           animate="animate"
@@ -51,12 +50,12 @@ const About = () => {
       </div>
 
       {/* Center Section (Profile Picture) */}
-      <div className="flex justify-center items-center p-6 bg-transparan">
+      <div className="flex justify-center items-center p-6 bg-transparent">
         <Pic />
       </div>
 
       {/* Right Section (Additional Info) */}
-      <div className="flex flex-col justify-center items-start p-6 bg-transparant overflow-x-auto">
+      <div className="flex flex-col justify-center items-start p-6 bg-transparent">
         <motion.div
           initial="initial"
           animate="animate"

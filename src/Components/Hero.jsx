@@ -100,7 +100,7 @@ const Hero = () => {
   return (
     <div className="hero grid grid-cols-1 xl:grid-cols-2 md:grid-cols-1 lg items-center lg:grid-cols-2 sm:px-6 h-auto xl:pt-20">
 <div className='w-full mx-auto grid items-center justify-center gap-7 text-center lg:-text-start xl:text-start'>
-  <motion.h1 className='text-2xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl w-full font-mono text-[#00ff99]'
+  <motion.h1 className='text-2xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl w-full font-mono bg-gradient-to-r from-blue-500 via-pink-500 to-red-600 bg-clip-text text-transparent'
     variants={textVariants}
     id=''
     initial="initial"

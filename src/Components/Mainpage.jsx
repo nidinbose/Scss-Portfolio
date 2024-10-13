@@ -11,12 +11,13 @@ import Services from './Services';
 import Parallax2 from './Parallax2';
 import Skills from './Skills';
 import About2 from './About2';
+import Contacts from './Contacts';
 // import Services from './Services';
 const Mainpage = () => {
   return (
 <>
 <section id='Homepage'><Link to={``}>
- {/* <Navbar/> */}
+ <Navbar/>
  <Hero/>
  </Link></section>
 
@@ -38,13 +39,20 @@ const Mainpage = () => {
 </section>
 
 <section>
-<About/>
+{/* <About/> */}
 </section>
 
 <section>
 <About2/>
 </section>
 
+<section>
+<Contacts/>
+</section>
+
+<section>
+
+</section>
 
 
 
