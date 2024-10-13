@@ -23,7 +23,7 @@ const Pic = () => {
           cx="253"
           cy="253"
           r="250"
-          stroke="#F9629F"
+          stroke="#C7B6DC"
           fill="transparent"
           strokeWidth="4"
           strokeLinecap="round"

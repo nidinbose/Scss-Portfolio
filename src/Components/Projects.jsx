@@ -3,21 +3,24 @@ import React, { useState } from 'react';
 const Projects = () => {
   const [activeTab, setActiveTab] = useState(1);
 
-  // Images for each tab
   const imagesTab1 = ['/mountains.png', '/mountains.png', '/mountains.png', '/mountains.png', '/mountains.png', '/mountains.png'];
   const imagesTab2 = ['/forest.png', '/forest.png', '/forest.png', '/forest.png', '/forest.png', '/forest.png'];
   const imagesTab3 = ['/beach.png', '/beach.png', '/beach.png', '/beach.png', '/beach.png', '/beach.png'];
 
-  // Function to switch tabs
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);
   };
 
-  // Determine which images to display based on the active tab
   const imagesToDisplay = activeTab === 1 ? imagesTab1 : activeTab === 2 ? imagesTab2 : imagesTab3;
 
   return (
-    <div className=" mx-auto py-10 px-4">
+    <div className="mx-auto py-10 px-4">
+      {/* Heading and Subheading */}
+      <div className="text-center mb-8">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">Our Projects</h1>
+        <p className="text-lg sm:text-xl text-gray-600 mt-2">Browse through our latest projects and explore the work we do.</p>
+      </div>
+
       {/* Tabs Section */}
       <div className="flex justify-center space-x-2 sm:space-x-4 mb-8 w-auto xl:w-96 md:w-96 mx-auto grid grid-cols-3">
         <button
@@ -56,7 +59,7 @@ const Projects = () => {
               className="w-full h-70 object-cover transition-transform duration-300 group-hover:scale-105"
             />
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-pink-500 opacity-0 group-hover:opacity-60 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-violet-500 to-pink-500 opacity-0 group-hover:opacity-60 transition-all duration-300 transform -translate-y-full group-hover:translate-y-0"></div>
 
             {/* Text overlay */}
             <div className="absolute inset-0 flex items-end justify-center p-4">

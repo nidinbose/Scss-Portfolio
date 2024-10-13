@@ -100,7 +100,7 @@ const Hero = () => {
   return (
     <div className="hero grid grid-cols-1 xl:grid-cols-2 md:grid-cols-1 lg items-center lg:grid-cols-2 sm:px-6 h-auto xl:pt-20">
 <div className='w-full mx-auto grid items-center justify-center gap-7 text-center lg:-text-start xl:text-start'>
-  <motion.h1 className='text-2xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl w-full font-mono bg-gradient-to-r from-blue-500 via-pink-500 to-red-600 bg-clip-text text-transparent'
+  <motion.h1 className='text-2xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-7xl w-full font-mono text-violet-500'
     variants={textVariants}
     id=''
     initial="initial"
@@ -108,24 +108,24 @@ const Hero = () => {
   >
     Hello I&apos;m
   </motion.h1>
-  <motion.h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-9xl w-full font-semibold font-mono hover:text-[#00ff99]'
+  <motion.h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-9xl w-full font-semibold font-mono text-white/60 '
       variants={textVariants}
       id=''
       initial="initial"
       animate="animate">
-  Nidinbose...
+  Nidinbose <span className='text-violet-500'>...</span>
 </motion.h2>
-  <motion.div className='text-2xl xl:text-3xl font-semibold font-mono'
+  <motion.div className='text-2xl xl:text-3xl font-semibold font-mono bg-gradient-to-r from-violet-500 via-white-500 to-red-600 bg-clip-text text-transparent'
       variants={textVariants}
       id=''
       initial="initial"
       animate="animate">
-    <TypingEffect className="xl:text-8xl" words={words} typingSpeed={typingSpeed} deletingSpeed={deletingSpeed} />
+    <TypingEffect className="xl:text-8xl " words={words} typingSpeed={typingSpeed} deletingSpeed={deletingSpeed} />
     </motion.div>
 
 
-<div className='text-md xl:text-lg hover:text-[#00ff99]'>
-<motion.p className='  text-white/40 w-full max-w-xl mx-auto font-mono hover:text-[#00ff99] '
+<div className='text-md xl:text-lg hover:'>
+<motion.p className='  text-violet-200 w-full max-w-xl mx-auto font-mono hover:text-[#00ff99] '
     variants={textVariants}
     initial="initial"
     animate="animate"
@@ -139,23 +139,25 @@ const Hero = () => {
      initial="initial"
      animate="animate">
 
-    <button className='uppercase mt-4 flex items-center gap-2 bg-transparent border-[#00ff99] font-mono border-2 text-white font-bold py-2 px-4 rounded-full ease-out duration-300 font-mono mb-4'>
+<Link to={``}>
+<button className='uppercase mt-4 flex items-center gap-2 hover:bg-violet-500 border border-violet-500 font-bold py-2 px-4 rounded-full ease-out duration-300 font-mono mb-4 text-violet-300 hover:text-white'>
       DOWNLOAD CV
     </button>
+</Link>
 
     <div className='flex gap-6'>
-      <Link className='hover:bg-[#00ff99]'><button className='flex items-center justify-center w-9 h-9 border border-[#00ff99] rounded-full text-[#00ff99] text-base hover:transition-all duration-500'>
+      <Link className='hover:bg-transparant'><button className='flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 text-base hover:transition-all duration-500'>
         <GrGithub />
       </button></Link>
-      <Link className='hover:bg-[#00ff99]'><button className='flex items-center justify-center w-9 h-9 border border-[#00ff99] rounded-full text-[#00ff99] text-base hover:transition-all duration-500'>
-        <GrGithub />
-      </button></Link>
-
-      <Link className='hover:bg-[#00ff99]'><button className='flex items-center justify-center w-9 h-9 border border-[#00ff99] rounded-full text-[#00ff99] text-base hover:transition-all duration-500'>
+      
+      <Link className=' '><button className='flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 text-base hover:transition-all duration-500'>
         <GrGithub />
       </button></Link>
 
-      <Link className='hover:bg-[#00ff99]'><button className='flex items-center justify-center w-9 h-9 border border-[#00ff99] rounded-full text-[#00ff99] text-base hover:transition-all duration-500'>
+      <Link className=''><button className='flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 text-base hover:transition-all duration-500'>
+        <GrGithub />
+      </button></Link>
+      <Link className=''><button className='flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 text-base hover:transition-all duration-500'>
         <GrGithub />
       </button></Link>
     </div>

@@ -39,7 +39,7 @@ const Mainpage = () => {
 </section>
 
 <section>
-{/* <About/> */}
+<About/>
 </section>
 
 <section>

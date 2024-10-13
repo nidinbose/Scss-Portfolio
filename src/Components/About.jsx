@@ -20,31 +20,31 @@ const textVariants = {
 
 const About = () => {
   return (
-    <div className="min-h-full grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 py-12 bg-transparent">
+    <div className="min-h-full grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 py-12 bg-transparent w-full">
       
       {/* Left Section (Info) */}
-      <div className="flex flex-col justify-right items-end p-6 bg-transparent rounded-lg">
+      <div className="flex flex-col justify-right items-end p-6 bg-transparent rounded-lg overflow-x-hidden ">
         <motion.div
           initial="initial"
           animate="animate"
           variants={textVariants}
           className="space-y-4"
         >
-          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
-            <IoIosArrowForward className="text-[#00ff99]" />
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-400 hover:text-violet-400 transition-all">
+            <IoIosArrowForward className="text-violet-400" />
             <span>Name: Nidinbose</span>
           </div>
-          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
-            <IoIosArrowForward className="text-[#00ff99]" />
-            <span>Role: Frontend Developer</span>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-400 hover:text-violet-400 transition-all">
+            <IoIosArrowForward className="text-violet-400" />
+            <span>Role: Full Stack Developer</span>
           </div>
-          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
-            <IoIosArrowForward className="text-[#00ff99]" />
-            <span>Experience: 3+ Years</span>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-400 hover:text-violet-400 transition-all">
+            <IoIosArrowForward className="text-violet-400" />
+            <span>Experience: 1+ Years</span>
           </div>
-          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
-            <IoIosArrowForward className="text-[#00ff99]" />
-            <span>Location: Remote</span>
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-400 hover:text-violet-400 transition-all">
+            <IoIosArrowForward className="text-violet-400" />
+            <span>Location: Onsite</span>
           </div>
         </motion.div>
       </div>
@@ -55,27 +55,27 @@ const About = () => {
       </div>
 
       {/* Right Section (Additional Info) */}
-      <div className="flex flex-col justify-center items-start p-6 bg-transparent">
+      <div className="flex flex-col justify-center items-start p-6 bg-transparent overflow-x-hidden">
         <motion.div
           initial="initial"
           animate="animate"
           variants={textVariants}
           className="space-y-4"
         >
-          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
-            <IoIosArrowForward className="text-[#00ff99]" />
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-400 hover:text-violet-400 transition-all">
+            <IoIosArrowForward className="text-violet-400" />
             <span>Skills: React, Tailwind CSS, Framer Motion</span>
           </div>
-          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
-            <IoIosArrowForward className="text-[#00ff99]" />
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-400 hover:text-violet-400 transition-all">
+            <IoIosArrowForward className="text-violet-400" />
             <span>Projects: 20+ Completed</span>
           </div>
-          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
-            <IoIosArrowForward className="text-[#00ff99]" />
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-400 hover:text-violet-400 transition-all">
+            <IoIosArrowForward className="text-violet-400" />
             <span>Interests: UI/UX Design</span>
           </div>
-          <div className="flex items-center gap-4 text-lg font-medium text-gray-700 hover:text-blue-500 transition-all">
-            <IoIosArrowForward className="text-[#00ff99]" />
+          <div className="flex items-center gap-4 text-lg font-medium text-gray-400 hover:text-violet-400 transition-all">
+            <IoIosArrowForward className="text-violet-400" />
             <span>Email: nidinbose@example.com</span>
           </div>
         </motion.div>

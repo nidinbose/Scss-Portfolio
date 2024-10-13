@@ -34,7 +34,7 @@ const Contacts = () => {
                     {/* Form */}
                     <div className="xl:w-[54%] order-2 xl:order-1">
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-                            <h3 className="text-4xl text-emerald-400 font-mono">Let's Work Together</h3>
+                            <h3 className="text-4xl bg-gradient-to-r from-violet-500 via-pink-500 to-violet-600 bg-clip-text text-transparent font-mono">Let's Work Together</h3>
                             <p className="text-white/60 font-mono">
                                 If you have any questions, feel free to reach out.
                             </p>
@@ -65,7 +65,7 @@ const Contacts = () => {
                                 placeholder="Type your message here"
                                 className="w-full h-[158px] rounded-md border border-white/10 focus:border-emerald-400 font-light bg-transparent px-4 py-2 text-base placeholder:text-white/60 outline-none font-mono text-emerald-400"
                             />
-                            <button className="uppercase flex items-center gap-2 bg-transparent border-emerald-400 hover:bg-emerald-400 border-2 text-white font-bold py-2 px-4 rounded-full mt-5 ease-out duration-300 font-mono w-36">
+                            <button className="uppercase flex items-center gap-2 bg-transparent border-violet-400 hover:bg-violet-400 border-2 text-white font-bold py-2 px-4 rounded-full mt-5 ease-out duration-300 font-mono w-36">
                                 <span>Send Message</span>
                             </button>
                         </form>
@@ -75,12 +75,12 @@ const Contacts = () => {
                         <ul className="flex flex-col gap-8">
                             {info.map((item, index) => (
                                 <li key={index} className="flex items-center gap-6">
-                                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-emerald-400 rounded-md flex items-center justify-center">
+                                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-violet-400 rounded-md flex items-center justify-center">
                                         <div className="text-[28px]">{item.icon}</div>
                                     </div>
                                     <div className="flex-1">
-                                        <p className="text-white/60 font-mono hover:text-emerald-400 transition-colors duration-200">{item.title}</p>
-                                        <h3 className="text-xl text-white font-mono hover:text-emerald-400 transition-colors duration-200">{item.description}</h3>
+                                        <p className="text-white/60 font-mono hover:text-violet-400 transition-colors duration-200">{item.title}</p>
+                                        <h3 className="text-xl text-white font-mono hover:text-violet-400 transition-colors duration-200">{item.description}</h3>
                                     </div>
                                 </li>
                             ))}
