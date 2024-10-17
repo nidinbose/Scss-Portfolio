@@ -3,6 +3,7 @@ import './Scss/Hero.scss';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { GrGithub } from "react-icons/gr";
+import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 // Motion Variants
 const textVariants = {
@@ -134,7 +135,7 @@ const Hero = () => {
   </motion.p>
 
 </div>
-  <motion.div className='flex flex-col sm:flex-row gap-4 items-center justify-start'
+  <motion.div className='flex flex-col sm:flex-row gap-4 items-center justify-start z-20'
      variants={textVariants}
      initial="initial"
      animate="animate">
@@ -146,20 +147,33 @@ const Hero = () => {
 </Link>
 
     <div className='flex gap-6'>
-      <Link className='hover:bg-transparant'><button className='flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 text-base hover:transition-all duration-500'>
-        <GrGithub />
-      </button></Link>
-      
-      <Link className=' '><button className='flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 text-base hover:transition-all duration-500'>
-        <GrGithub />
-      </button></Link>
+    <Link>
+  <button className="flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 hover:text-white hover:bg-gradient-to-r from-violet-500 via-violet-500 to-pink-600 transition-all duration-300">
+    <GrGithub />
+  </button>
+</Link>
 
-      <Link className=''><button className='flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 text-base hover:transition-all duration-500'>
-        <GrGithub />
-      </button></Link>
-      <Link className=''><button className='flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 text-base hover:transition-all duration-500'>
-        <GrGithub />
-      </button></Link>
+<a
+  href="http://www.linkedin.com/in/nidin-bose-37b305308"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 hover:text-white hover:bg-gradient-to-r from-violet-500 via-violet-500 to-pink-600 transition-all duration-300"
+>
+  <FaLinkedin />
+</a>
+
+<Link>
+  <button className="flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 hover:text-white hover:bg-gradient-to-r from-violet-500 via-violet-500 to-pink-600 transition-all duration-300">
+    <FaInstagram />
+  </button>
+</Link>
+
+<Link to={``}>
+<button className="flex items-center justify-center w-9 h-9 border border-violet-500 rounded-full text-violet-300 hover:text-white hover:bg-gradient-to-r from-violet-500 via-violet-500 to-pink-600 transition-all duration-300">
+   <FaWhatsapp/>
+  </button>
+</Link>
+
     </div>
   
   </motion.div>

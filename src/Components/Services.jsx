@@ -41,7 +41,7 @@ const Services = () => {
       </div>
       <div class="relative lg:pr-52 font-mono">
         <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">Full Stack <br /> Web Development</h2>
-        <p class="bg-gradient-to-r from-violet-500 via-pink-500 to-blue-500 bg-clip-text text-transparent font-mono">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+        <p class="bg-gradient-to-r from-violet-500 via-pink-500 to-blue-500 bg-clip-text text-transparent font-mono">Full-stack development involves building both the front-end (client side) and back-end (server side) of web applications.</p>
       </div>
       <div class="icon"></div>
     </div>
@@ -50,7 +50,7 @@ const Services = () => {
       </div>
       <div class="relative lg:pl-48">
         <h2 class="capitalize bg-gradient-to-r from-violet-500 via-pink-500 to-blue-500 bg-clip-text text-transparent mb-4 text-2xl xl:text-3xl">UI/UX <br /> Designing</h2>
-        <p class="text-gray-400 font-mono">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+        <p class="text-gray-400 font-mono">UI/UX design focuses on creating user-centered digital experiences. UI (User Interface) design is about crafting visually appealing, functional interfaces, ensuring that elements like buttons, menus, and layouts</p>
       </div>
     </div>
     <div class="card border p-10 relative">
@@ -58,7 +58,7 @@ const Services = () => {
       </div>
       <div class="relative lg:pr-44">
         <h2 class="capitalize bg-gradient-to-r from-violet-500 via-pink-500 to-blue-500 bg-clip-text text-transparent mb-4 text-2xl xl:text-3xl ">Graphic <br />Designing</h2>
-        <p class="text-gray-400 font-mono">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+        <p class="text-gray-400 font-mono">Graphic design is the art of visually communicating ideas and messages through creative visuals. It involves the use of typography, color, imagery, and layout to create compelling designs</p>
       </div>
     </div>
     <div class="card transparant p-10 relative">
@@ -66,7 +66,7 @@ const Services = () => {
       </div>
       <div class="relative lg:pl-48">
         <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">Mobile<br />App Development</h2>
-        <p class=" font-mono bg-gradient-to-r from-violet-500 via-pink-500 to-blue-500 bg-clip-text text-transparent">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+        <p class=" font-mono bg-gradient-to-r from-violet-500 via-pink-500 to-blue-500 bg-clip-text text-transparent">Mobile app development involves creating software applications specifically designed to run on mobile devices like smartphones and tablets.</p>
       </div>
     </div>
   </div>

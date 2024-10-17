@@ -25,30 +25,30 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparant text-white">
-      <div className=" mx-auto flex justify-center w-full items-center  xl:space-x-[46vw] p-5">
+      <div className=" mx-auto flex justify-between xl:justify-center w-full items-center  xl:space-x-[50vw] p-5 ">
         {/* Logo */}
      <div>
-     <Link to="/" className="text-3xl font-bold hover:text-emerald-400 font-mono">
+     <Link to="/" className="text-3xl font-bold  bg-gradient-to-r from-violet-500 via-violet-500 to-pink-600 bg-clip-text text-transparent font-mono">
           Nidinbose .
         </Link>
      </div>
 
         {/* Normal Navbar (visible on medium screens and above) */}
         <ul className="hidden md:flex space-x-8">
-          <li className="hover:text-emerald-400">
+          <li className="hover:text-violet-400">
             <Link to="/" className="font-mono">Home</Link>
           </li>
-          <li className="hover:text-emerald-400">
-            <Link to="/project" className="font-mono">Projects</Link>
+          <li className="hover:text-violet-400">
+            <Link to="/projects" className="font-mono">Projects</Link>
           </li>
-          <li className="hover:text-emerald-400">
+          {/* <li className="hover:text-violet-400">
             <Link to="/about" className="font-mono">About</Link>
-          </li>
-          <li className="hover:text-emerald-400">
+          </li> */}
+          <li className="hover:text-violet-400">
             <Link to="/services" className="font-mono">Services</Link>
           </li>
-          <li className="hover:text-emerald-400">
-            <Link to="/contact" className="font-mono">Contact</Link>
+          <li className="hover:text-violet-400">
+            <Link to="/contacts" className="font-mono">Contact</Link>
           </li>
         </ul>
 
